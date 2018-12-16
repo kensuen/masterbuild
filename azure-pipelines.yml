@@ -9,9 +9,9 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
-variables:
-  imageName: 'your-container-image-name:$(build.buildId)'
+#variables:
+#  imageName: 'your-container-image-name:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
+- script: docker build -f Dockerfile -t test:1.0 .
   displayName: 'docker build'
