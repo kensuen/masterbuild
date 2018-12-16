@@ -13,5 +13,5 @@ pool:
 #  imageName: 'your-container-image-name:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t test:1.0 .
+- script: docker build -f dockerfile -t test:1.0 .
   displayName: 'docker build'
